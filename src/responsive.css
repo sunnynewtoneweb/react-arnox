@@ -1,0 +1,183 @@
+/*=========================== Large screen Responsive Start Here ---*/
+@media (min-width:1900px){
+    .container{ max-width: 1400px;}
+}
+@media (min-width:1800px){
+    .hero_sec svg{ margin-right: -9vw;}
+}
+
+/*=========================== Laptop/Tab/Mobile Responsive Start Here ---*/
+@media (max-width:2000px) {
+    .imgmarqee li.splide__slide img{ height: 20vw;}
+}
+@media (max-width:1820px) {
+    h1 { font-size: 62px;}
+    .imgmarqee li.splide__slide img{ height: 22vw;}
+}
+@media (max-width:1569px) {
+    h1 { font-size: 60px;}
+    h2 { font-size: 50px;}
+    h3 { font-size: 36px;}
+    h4 { font-size: 30px;}
+    h5 { font-size: 26px;}
+    h6 { font-size: 18px;}
+    .sec-title{ font-size: 90px;}
+    .pt-120 { padding-top: 110px;}
+    .pb-120 { padding-bottom: 110px;}
+    
+    .team_item figure img{ max-width: 100%;}
+    .team_item figure::before { width: 260px; height: 260px;}
+    .team_item h5{ font-size: 22px;}
+
+    .cont_info h3{ font-size: 24px;}
+
+    #message { padding: 0;}
+}
+
+@media (max-width:1199px) {
+    h1 { font-size: 48px;}
+    h2 { font-size: 42px;}
+    h4 { font-size: 24px;}
+    h5 { font-size: 20px;}
+    h6 { font-size: 16px;}
+    .pt-200 { padding-top: 150px;}
+    .pb-200 { padding-bottom: 150px;}
+    .sec-title { font-size: 80px; margin-bottom: 60px;}
+    .more-info-link{ font-size: 14px;}
+    ul.change_color{ margin-left: 20px;}
+    .sign_curve1{ left: 2vw; top: 102px; width: 32px; height: 32px;}
+
+    .counter__item{ padding: 30px 21px 30px 22px;}
+    .counter_numbers { font-size: 50px; line-height: 80%;}
+    .technologi_area .container.md { max-width: 700px;}
+    .team_item figure::before { width: 280px; height: 280px;}
+    ul.check_list li{ font-size: 18px; margin-bottom: 30px;}
+    .cont_info p{ font-size: 15px;}
+    .add_info{ gap: 16px;}
+    .add_info p{ font-size: 13px;}
+    .cont_form { padding-left: 30px;}
+    .form-group .form-control{ font-size: 16px;}
+    .cont_info h5{ font-size: 26px;}
+
+    .imgmarqee li.splide__slide img{ height: 30vw;}
+
+    .service__item { margin-bottom: 30px;}
+    .cta_area_box h4 small{ font-size: 14px;}
+    .accordion-faq .accordion-button{ font-size: 22px;}
+}
+
+@media (max-width: 991px) {
+    h1 { font-size: 38px;}
+    h2 { font-size: 32px;}
+    h3 { font-size: 30px;}
+    h4 { font-size: 22px;}
+    h6 { font-size: 15px;}
+    .sec-title { font-size: 70px; margin-bottom: 40px;}
+    .sec-sub-title small{ font-size: 12px; letter-spacing: 4px;}
+    .pt-200 { padding-top: 100px;}
+    .pb-200 { padding-bottom: 100px;}
+    .pt-120 { padding-top: 60px;}
+    .pb-120 { padding-bottom: 60px;}
+    .pb-100 { padding-bottom: 40px;}
+    .pt-80 { padding-top: 40px;}
+    .pb-80 { padding-bottom: 40px;}
+
+    .progress-wrap{ right: 20px; bottom: 20px; height: 36px; width: 36px;}
+    .progress-wrap::before { line-height: 36px; height: 36px; width: 36px;}
+    .progress-wrap::after { line-height: 36px; height: 36px; width: 36px;}
+    .sign_curve1{ left: 1vw; top: 70px; width: 30px; height: 30px;}
+    .sign_curve2 { width: 20px; height: 20px; bottom: 58px;}
+    .hero_area h1 span{ padding-right: 0;}
+    .hero_area h1 span i{ right: -60px; width: 47px;}
+    .service__item > a{ gap: 20px;}
+    .cta_area_box .btns{ min-width: 140px;}
+    .about_area .sign_curve2 { left: auto;right: 4vw; bottom: 25vw;}
+    .project__item { padding-bottom: 40px;}
+    .project_slider .splide__slide .detail{ padding-bottom: 40px; display: flex; flex-direction: column-reverse;}
+    .testimonial_slider{ padding-bottom: 40px; display: block; text-align: center;}
+    .testimonial_slider #main-testimonial .detail{ max-width: 100%;}
+    .testimonial_area .sign_curve3 { left: auto; right: 10vw;}
+    .testi_ratings{ justify-content: center;}
+    .testi_ratings i{ font-size: 20px;}
+    .testi_ratings span{ line-height: 22px; font-size: 16px;}
+    .testimonial_slider #main-testimonial .detail{ padding: 0;}
+    .testimonial_slider .splide__arrows{ bottom: -50px; justify-content: center;}
+    .authore{ display: flex; justify-content: center; text-align: left;}
+    #thumbnail-testimonial{ margin-top: 30px;}
+    .glow_curve1{ width: 150px; height: 150px; filter: blur(80px) opacity(0.4); right: 0; top: 86px; transform:inherit;}
+    .glow_curve2{ width: 150px; height: 150px; filter: blur(60px) opacity(0.4); bottom: 0;}
+    .ring_curve1{ width: 500px; height: 456px; top: auto; bottom: 0;}
+    .ring_curve2{ width: 200px; height: 328px; background-position: top right; margin-top:0; top:75%;}
+    .team_slider { padding-bottom: 50px;}
+    .team_slider .splide__arrows{ bottom: -50px;}
+    .team_item figure::before { width: 300px; height: 300px;}    
+    .cont_form{ padding: 15px 0 40px;}
+    .cont_info .title_head > p{ margin-bottom: 40px;}
+    .contact_detail{ margin-bottom: 30px;}
+    .info_card p{ font-size: 15px;}
+
+    .lbl-tag { padding: 9px 15px; font-size: 12px;}
+    .service__item p{ padding-left: 100px;}
+
+    .service_list_img{ height: 450px;}
+    .service_list_img a::before { width: 140px; height: 140px; background-size: 22px auto;}
+}
+
+@media (max-width: 767px) {
+    html { -webkit-text-size-adjust:none;}
+
+    .container{ width:90%; margin:0 auto; padding:0; max-width: inherit;}
+    h3{ font-size: 26px;}
+    .sec-title { font-size: 12vw;}
+    .center-absolute{ position: relative; left: 0;top: 0;transform: inherit; margin-bottom: 35px; text-align: center;}
+
+    .hero_area h1 span i{ display: inline-block; width: 34px; position: relative; right:0;}
+    .service__item{ margin-bottom: 25px;}
+    .service__item > a{ gap: 16px;}
+    .service__item_icon { width: 60px; flex: 0 0 60px;}
+    .technologies__item{ height: auto !important; width: auto !important;}
+    .technologies__item::before,.technologies__item::after{display: none;}
+    .technologies__item_title{ font-size: 12px; margin: 0;}
+    .cta_area_box .bg_curve { width: 72%; right: -24%;}
+    .about_area p{ margin-bottom: 0;}    
+    .about_counter .border-end{ border-right: none !important;}
+    .team_slider { padding-bottom: 50px;}
+    .team_item figure::before { width: 40vw; height: 40vw;}
+    ul.check_list li { font-size: 14px; margin-bottom: 15px; padding-left: 25px; background-size: 14px 14px; background-position-y: 4px;}
+    .features_labels span { padding: 6px 15px; min-width: 80px; font-size: 12px;}
+    .info_card.yellow{ margin-top: 30px;}
+
+    .imgmarqee li.splide__slide:nth-child(even) img{ margin: 25px 0 0;}
+
+    .service__item p { padding-left: 76px;}
+    .service__item_icon svg{ height: auto;}
+
+    .accordion-faq .accordion-button { font-size: 18px; padding: 20px 40px 20px 0;}
+}
+
+@media (max-width:575px) {
+    h1{ font-size: 30px; line-height:110%;}
+    h2 { font-size: 30px;}
+    .project_slider{ padding-left: 0;}
+    .project_slider .splide__slide .detail { padding-bottom: 60px;}
+    .project_slider .splide__arrows{ right: 5%; margin-top: -55px; left: 5%; justify-content: center;}
+    .service__item_title{ font-size: 16px; font-weight: 500;}
+
+    .mision figure{padding: 80px 50px 60px 40px;}
+    .vision figure{padding: 60px 40px 80px 50px ;}
+    .team_item figure::before { width: 260px; height: 260px; bottom: -40px;}
+    .team_item figure img { max-width: 80%;}
+    .project_item{ border-radius: 10px;}
+    .project_item .details{ padding: 30px 20px 0;}
+    .contact_detail{ padding: 0;}
+    .cont_form{ padding: 30px 20px 40px;}
+    .cont_info{ padding: 30px 20px 20px;}
+    .team_slider.container{ width: 100%;}
+    .team_slider #slider2 #slider2-track { padding-left: 15% !important;}
+    .team_item figure::before { width: 65vw; height: 65vw; bottom: -16vw;}
+    
+    .imgmarqee li.splide__slide:nth-child(even) img{ margin: 15px 0 0;}
+    .cta_area_box .bg_curve { width: 100%; right: -15%; height: auto;}
+
+    .service_list_img{ height: 350px;}
+}

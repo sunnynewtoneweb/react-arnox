@@ -1,0 +1,220 @@
+/*----------------------------------------
+            ANIMATION CSS
+----------------------------------------*/
+
+/* slide-down */
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+/* dropdownMenu-slide */
+@keyframes dropdownMenu-slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10%);
+        z-index: -1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0%);
+        z-index: 55;
+    }
+}
+
+/* wcRotate */
+@keyframes wcRotate {
+    0% {
+      -webkit-transform: rotate(-10deg) scale(1.0);
+              transform: rotate(-10deg) scale(1.0);
+    }
+    50% {
+      -webkit-transform: rotate(10deg) scale(0.5);
+              transform: rotate(10deg) scale(0.5);
+    }
+    100% {
+      -webkit-transform: rotate(-10deg) scale(1.0);
+              transform: rotate(-10deg) scale(1.0);
+    }
+}
+
+/* Moving / Blinking */
+@keyframes movnblink {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+}
+
+/* Icon Border */
+@keyframes animate-stroke{
+	0%{
+        stroke-dasharray: 2230px;
+        stroke-dashoffset: 2230px;
+	}
+
+	1% {
+    	stroke-dashoffset: 2230px;
+	}
+
+	100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 2230px;
+	}
+}
+@keyframes line1{
+    0%{ transform: skewY(0);}
+    50%{ transform: skewY(-10deg);}
+    100%{ transform: skewY(0);}
+}
+
+@keyframes small {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(var(--translate-x, 0)) translateY(var(--translate-y, 0));}
+    100% { transform: translateX(0); }
+}
+
+/* Service Icoon */
+@keyframes hand1{
+    0% { transform: skewY(0); }
+    50% { transform: skewX(7deg);}
+    100% { transform: skewY(0); }
+}
+
+/* Home Vector */
+@keyframes slidein {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(-0.5deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slidein1 {
+    0% {
+      transform: rotate(-0.3deg);
+    }
+    
+    50% {
+        transform: rotate(-0.4deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate-stroke1 {
+    0% {
+      stroke-dasharray: 2230px;
+      stroke-dashoffset: 2230px;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 2230px;
+    }
+}
+
+@keyframes hand {
+    0% {
+      transform: skew(0deg);
+    }
+    
+    50% {
+        transform: skew(-1deg);
+    }
+    
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+/* CTA */
+@keyframes jump1{
+    from {
+        transform: scaleY(0);
+      }
+    
+    5% {
+        transform: translateY(-400px) scaleX(1);
+      }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes jump2{
+    from {
+        transform: scaleY(0);
+      }
+    
+    5% {
+        transform: translateY(-400px) translateX(-187px) scaleX(1);
+      }
+    
+    to {
+        transform: translateY(0) translateX(-187px);
+    }
+}
+@keyframes jump5{
+    from {
+        transform: scaleY(0);
+      }
+    
+    5% {
+        transform: translateY(-400px) translateX(-177.013px) scaleX(1);
+      }
+    
+    to {
+        transform: translateY(0) translateX(-177.013px);
+    }
+}
+
+/* Spin */
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+/* left-to-right */
+@keyframes left-to-right {
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(-10px);
+    }
+}
+/* right-to-left */
+@keyframes right-to-left {
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(10px);
+    }
+}
