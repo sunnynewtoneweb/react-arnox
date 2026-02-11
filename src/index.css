@@ -338,13 +338,17 @@ section {
 .splide .splide__arrow--next{
     background:url(../images/arrow_black24x_r.svg) no-repeat center center;
 }
-.splide .splide__arrow:hover{
+.splide .splide__arrow:not([disabled]):hover{
     background: url(../images/arrow_sky24x.svg) no-repeat center center;
     border-color: var(--primary);
 }
-.splide .splide__arrow--next:hover{
+.splide .splide__arrow--next:not([disabled]):hover{
     background: url(../images/arrow_sky24x_r.svg) no-repeat center center;
     border-color: var(--primary);
+}
+.splide .splide__arrow[disabled]{
+    cursor: none;
+    pointer-events: none;
 }
 
 /* Testimonial */

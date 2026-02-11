@@ -1,4 +1,5 @@
 import ThemeSwitcher from "../ThemeSwitcher";
+import { NavLink } from 'react-router-dom'
 import { headerMenu, servicesList, contactButton, contactButton2 } from "./menuData";
 import { useEffect, useState } from "react";
 
@@ -48,15 +49,13 @@ function Header() {
     };
   }, []);
 
-  const currentPath = window.location.pathname;
-
   return (
     <header className={`header_sec w-100 py-3 py-lg-4 ${isSticky ? "sticky" : ""}`}>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light p-0">
-          <a className="navbar-brand p-0" href="index" aria-label="Arnox Logo Here">
+          <a className="navbar-brand p-0" href={headerMenu.path} aria-label="Arnox Logo Here">
             <svg width="186" height="40" viewBox="0 0 186 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_6309_2)">
+              <g clipPath="url(#clip0_6309_2)">
                 <g style={{mixBlendMode:"multiply"}}>
                   <path d="M43.538 20.1981C42.3198 19.3585 40.903 18.8524 39.4285 18.7301C37.954 18.6079 36.4732 18.8737 35.1333 19.5012L33.3785 20.3807L32.3722 20.8839L24.6769 3.46124C24.2314 2.45212 23.5066 1.59138 22.5882 0.980408C21.6697 0.369442 20.5958 0.0337075 19.4928 0.0127624C18.3899 -0.0081828 17.304 0.28653 16.363 0.862184C15.422 1.43784 14.6651 2.27045 14.1815 3.26192L0.696412 29.7527L0.667139 29.8113C0.0759981 31.043 -0.120638 32.4271 0.104063 33.7747C0.328764 35.1224 0.963858 36.3678 1.92266 37.3411C2.88146 38.3144 4.11725 38.9681 5.46135 39.2129C6.80545 39.4578 8.19238 39.282 9.43282 38.7093L9.47464 38.6898L29.6013 28.5875L32.4711 35.0896C33.7158 37.9079 36.3738 39.6098 39.3329 39.6098C39.8003 39.6087 40.2666 39.5667 40.7267 39.4843C44.2307 38.8557 46.7312 36.0472 46.9487 32.493L47.2386 27.7721C47.3361 26.2965 47.0458 24.8211 46.3966 23.4925C45.7475 22.1638 44.762 21.0281 43.538 20.1981ZM7.03407 33.5927C6.85129 33.6696 6.64955 33.6898 6.45517 33.6504C6.26078 33.611 6.08277 33.514 5.94435 33.372C5.80592 33.2299 5.71351 33.0495 5.67916 32.8541C5.6448 32.6588 5.67011 32.4576 5.75177 32.2769L19.2299 5.78751L19.2592 5.72897C19.2708 5.70578 19.2886 5.68627 19.3106 5.67263C19.3326 5.65899 19.358 5.65176 19.3839 5.65176C19.4099 5.65176 19.4353 5.65899 19.4573 5.67263C19.4793 5.68627 19.4971 5.70578 19.5087 5.72897L27.314 23.4123L7.03407 33.5927ZM41.6006 27.4306L41.3121 32.1515C41.2285 33.5118 40.1803 33.8449 39.7329 33.9244C39.2855 34.0038 38.1872 34.0638 37.6422 32.8093L34.658 26.0521L35.7243 25.5183L37.5363 24.6082C37.9909 24.4058 38.49 24.3241 38.9854 24.3707C39.4808 24.4174 39.9559 24.5909 40.3647 24.8745C40.7736 25.1582 41.1025 25.5424 41.3197 25.9901C41.5369 26.4378 41.6351 26.9339 41.6048 27.4306H41.6006Z" fill="url(#paint0_linear_6309_2)"/>
                 </g>
@@ -94,16 +93,16 @@ function Header() {
               </g>
               <defs>
                 <linearGradient id="paint0_linear_6309_2" x1="0.112852" y1="19.5598" x2="47.3252" y2="19.9553" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#026BCD"/>
-                  <stop offset="1" stop-color="#026BCD"/>
+                  <stop stopColor="#026BCD"/>
+                  <stop offset="1" stopColor="#026BCD"/>
                 </linearGradient>
                 <linearGradient id="paint1_linear_6309_2" x1="35.2401" y1="22.6359" x2="33.4128" y2="23.4876" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#026BCD" stop-opacity="0"/>
-                  <stop offset="1" stop-color="#026BCD"/>
+                  <stop stopColor="#026BCD" stopOpacity="0"/>
+                  <stop offset="1" stopColor="#026BCD"/>
                 </linearGradient>
                 <linearGradient id="paint2_linear_6309_2" x1="26.8155" y1="26.8211" x2="28.1633" y2="26.1549" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#026BCD" stop-opacity="0"/>
-                  <stop offset="1" stop-color="#026BCD"/>
+                  <stop stopColor="#026BCD" stopOpacity="0"/>
+                  <stop offset="1" stopColor="#026BCD"/>
                 </linearGradient>
                 <clipPath id="clip0_6309_2">
                   <rect width="186" height="39.6135" fill="white"/>
@@ -130,10 +129,10 @@ function Header() {
             <ThemeSwitcher />
 
           </div>
-          <div className="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample"
+          <div className="offcanvas offcanvas-start-lg" tabIndex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div className="offcanvas-header mb-4 d-flex d-lg-none justify-content-between">
-              <a href="#" className="offcanvas_logo"><img style={{width:'45'}} src="/images/logo-icon.svg" alt="Logo Icon"/></a>
+              <a href="#" className="offcanvas_logo"><img style={{width:'45px'}} src="/images/logo-icon.svg" alt="Logo Icon"/></a>
               <a href="#" className="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#000"
 								className="bi bi-x-circle" viewBox="0 0 16 16">
@@ -148,12 +147,12 @@ function Header() {
                 {headerMenu.map((item, index) => (
                   item.isDropdown ? (
                     <li key={index} className="nav-item dropdown megamenu">
-                      <a className={`nav-link ${
-                          currentPath === item.path ? "active" : ""
-                        }`}
-                        href={item.path}>
+                      <NavLink to={item.path}
+  className={({ isActive }) =>
+    `nav-link ${isActive ? "active" : ""}`
+  }>
                         <img src={item.icon} alt={item.name} /> {item.name}
-                      </a>
+                      </NavLink>
 
                       <a
                         className="dropdown-toggle"
@@ -167,14 +166,13 @@ function Header() {
                           {servicesList.map((service, i) => (
                             <div key={i} className="col-lg-6">
                               <div className="service__item">
-                                <a href={service.path} className={
-                                    currentPath === service.path ? "active" : ""
-                                  }>
+                                <NavLink to={service.path}
+  className={({ isActive }) => isActive ? "active" : ""}>
                                   <figure className="service__item_icon">
                                     <img src={service.icon} alt={service.title} />
                                   </figure>
                                   <strong>{service.title}</strong>
-                                </a>
+                                </NavLink>
                               </div>
                             </div>
                           ))}
@@ -183,12 +181,13 @@ function Header() {
                     </li>
                   ) : (
                     <li key={index} className="nav-item">
-                      <a className={`nav-link ${
-                          currentPath === item.path ? "active" : ""
-                        }`}
-                        href={item.path}>
+                      <NavLink to={item.path}
+  className={({ isActive }) =>
+    `nav-link ${isActive ? "active" : ""}`
+  }
+  end={item.path === "/"}>
                         <img src={item.icon} alt={item.name} /> {item.name}
-                      </a>
+                      </NavLink>
                     </li>
                   )
                 ))}
