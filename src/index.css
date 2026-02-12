@@ -401,6 +401,7 @@ section {
 .testi_ratings i{
     font-size: 30px;
     color: var(--yellow);
+    margin-right: 4px;
 }
 .testi_ratings span{
     margin: 0;

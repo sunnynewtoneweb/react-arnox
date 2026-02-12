@@ -41,7 +41,7 @@ function Footer() {
           </div>
           <div className="col-lg-7 col-md-6">
             <div className="row">
-              <div className="col-sm-5 col-4 col-md-3">
+              <div className="col-sm-5 col-4 col-md-4 col-lg-4 col-xl-3">
                 <ul className="foot_links">
                   {footerMenu.map((item, index) => (
                     <li key={index}>
@@ -50,7 +50,7 @@ function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="col-sm-5 col-4 col-md-7">
+              <div className="col-sm-5 col-4 col-md-6 col-lg-6 col-xl-7">
                 <ul className="foot_links">
                   {footerServeMenu.map((item, index) => (
                     <li key={index}>

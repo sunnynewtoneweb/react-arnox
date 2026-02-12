@@ -1,4 +1,4 @@
-import { counterItems } from "./aboutData.js";
+import { counterItems } from "./aboutData";
 import CounterCard from "./CounterCard";
 
 function CounterCards() {
