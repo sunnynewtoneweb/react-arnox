@@ -123,7 +123,8 @@
     font-weight: 600;
 }
 .megamenu .service__item > a:hover,
-.megamenu .service__item > a:focus{
+.megamenu .service__item > a:focus,
+.megamenu .service__item > a.active{
     color: var(--primary);
 }
 

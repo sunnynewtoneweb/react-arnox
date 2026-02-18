@@ -4,6 +4,11 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Services from './pages/Services'
+import ServiceDetail from "./pages/services/ServiceDetail";
+import Projects from './pages/Projects.jsx'
+import ProjectDetail from "./pages/projects/ProjectDetail";
+
 import './App.css'
 
 function App() {
@@ -14,6 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
 
       <Footer/>

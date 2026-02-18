@@ -53,7 +53,7 @@ function Header() {
     <header className={`header_sec w-100 py-3 py-lg-4 ${isSticky ? "sticky" : ""}`}>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light p-0">
-          <a className="navbar-brand p-0" href={headerMenu.path} aria-label="Arnox Logo Here">
+          <a className="navbar-brand p-0" href="/" aria-label="Arnox Logo Here">
             <svg width="186" height="40" viewBox="0 0 186 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_6309_2)">
                 <g style={{mixBlendMode:"multiply"}}>

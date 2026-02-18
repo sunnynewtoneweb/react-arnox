@@ -24,22 +24,22 @@ export const headerMenu = [
 export const servicesList = [
   {
     title: "Brand Strategy",
-    path: "/branding",
+    path: "/services/branding",
     icon: "/images/service_ic1.svg",
   },
   {
     title: "Web Designing",
-    path: "/design",
+    path: "/services/design",
     icon: "/images/service_ic2.svg",
   },
   {
     title: "Web Development",
-    path: "/development",
+    path: "/services/development",
     icon: "/images/service_ic3.svg",
   },
   {
     title: "Hire Dedicated",
-    path: "/dedicated",
+    path: "/services/dedicated",
     icon: "/images/service_ic4.svg",
   },
 ];
