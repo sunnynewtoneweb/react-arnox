@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import ServiceDetail from "./pages/services/ServiceDetail";
 import Projects from './pages/Projects.jsx'
 import ProjectDetail from "./pages/projects/ProjectDetail";
+import Error from "./pages/Error.jsx";
 
 import './App.css'
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="*" element={<Error />} />
       </Routes>
 
       <Footer/>

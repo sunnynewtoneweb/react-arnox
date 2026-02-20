@@ -132,7 +132,7 @@ function Header() {
           <div className="offcanvas offcanvas-start-lg" tabIndex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div className="offcanvas-header mb-4 d-flex d-lg-none justify-content-between">
-              <a href="#" className="offcanvas_logo"><img style={{width:'45px'}} src="/images/logo-icon.svg" alt="Logo Icon"/></a>
+              <a href="/" className="offcanvas_logo"><img style={{width:'45px'}} src="/images/logo-icon.svg" alt="Logo Icon"/></a>
               <a href="#" className="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#000"
 								className="bi bi-x-circle" viewBox="0 0 16 16">

@@ -1,41 +1,41 @@
 export const footerMenu = [
   { 
     name: "Home",
-    link: "index" 
+    link: "/" 
   },
   { 
     name: "About Us",
-    link: "about" 
+    link: "/about" 
   },
   { 
     name: "Services",
-    link: "services" 
+    link: "/services" 
   },
   { 
     name: "Projects",
-    link: "projects" 
+    link: "/projects" 
   },
   { 
     name: "Get in Touch",
-    link: "contact" 
+    link: "/contact" 
   },
 ];
 export const footerServeMenu = [
   { 
     name: "Brand strategy",
-    link: "branding" 
+    link: "/services/branding" 
   },
   { 
     name: "Designing",
-    link: "design" 
+    link: "/services/design" 
   },
   { 
     name: "Development",
-    link: "development" 
+    link: "/services/development" 
   },
   { 
     name: "hire dedicated",
-    link: "dedicated" 
+    link: "/services/dedicated" 
   },
 ];
 export const footerTitle = {
@@ -45,7 +45,7 @@ export const footerTitle = {
 };
 export const footerContLink = {
   text: "Contact Us",
-  link: "contact",
+  link: "/contact",
   icon: "/images/arrow_black24x_r.svg",
 };
 export const footerEmail = {

@@ -120,3 +120,7 @@ ul.check_list li{ filter: brightness(0) invert(1);}
 
 .accordion-faq .accordion-button::after{ filter: brightness(0) invert(1);}
 .accordion-faq .accordion-button:not(.collapsed){color: var(--secondary);}
+
+.problem_area .inner{ background-color: #1a1a1a;}
+.problem_area .inner .white{ color: var(--dark);}
+.approach_block i{ filter: brightness(0) invert(1);}

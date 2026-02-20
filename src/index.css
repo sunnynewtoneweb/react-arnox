@@ -745,9 +745,50 @@ section {
 .cont_form .iti .iti__selected-flag .iti__arrow{ border-top-color: rgba(0,0,0,0.6);}
 .cont_form .iti .iti__selected-flag .iti__arrow--up{ border-bottom-color: rgba(0,0,0,0.6);}
 
-/*------------------*/
 
-#message {  padding: 0px 40px 0px 0px; }
+/*-------------------------- Project Detail page -------------------------*/
+.lapmock_area .container{ max-width: 1432px;}
+.laptop-mockup{ position: relative;}
+.laptop-mockup .mockup_img{ width: 100%;}
+.laptop-mockup .screen{ width: 100%; max-width: 1056px; height: 651px; position: absolute; top: 38px; left: 50%; transform: translateX(-50%); margin: 0 3px 0 0;}
+.laptop-mockup .screen img{ width: 100%; height: 100%; object-fit: cover; object-position: top center; border-radius: 5px;}
+.pdass_block{ display: flex; gap: 20px; align-items: center;}
+.pdass_block i{ display: flex; width: 60px; min-width: 60px; height: 60px; align-items: center; justify-content: center; border: 1px solid var(--primary); border-radius: 50%;}
+.pdass_block h6{ font-size: 18px; color: var(--dark);}
+.pdass_block p{ margin: 0; color: var(--darkBlue);}
+.proverview_box{ background: var(--lightSky); border-radius: 15px; padding: 40px 48px; display: flex; flex-direction: column; gap: 35px;}
+.proverview_box .pdass_block{ display: block;}
+
+.problem_area .inner{ padding-left: 169px; padding-right: 169px; background-color: var(--dark); background-image: url(../images/problem_curve1.svg), url(../images/problem_curve2.svg); background-repeat: no-repeat, no-repeat; background-position: top left, bottom right; border-radius: 10px;}
+.problem_area .inner p{ margin-bottom: 0;}
+
+.approach_block{ padding: 34px 30px 30px; background: var(--lightSky); border-radius: 10px; transition: all .3s; height: 100%;}
+.approach_block i{ display: flex; margin-bottom: 50px; transition: all .3s;}
+.approach_block h6{ margin: 0 0 14px; font-size: 24px; font-weight: bold;}
+.approach_block p{ margin: 0;}
+.approach_block:hover{ background: rgba(255,198,75,0.1);}
+
+.desktop_screen{ width: 100%; max-width: 1124px; height: 659px; display: inline-flex; margin-right: -81px; border-radius: 15px; padding: 16px; background: linear-gradient(45deg, #000 0%, #333333 100%); box-shadow: inset -2px 2px #000, 0 70px 60px -80px rgba(0,0,0,0.8);}
+.desktop_screen img{ width: 100%; object-fit: cover; object-position: top center; border-radius: 7px;}
+.mobile_screen{ width: 100%; max-width: 256px; height: 506px; margin: 0 auto -20px; display: inline-flex; border-radius: 15px; padding: 7px; background: linear-gradient(10deg, #000 0%, #2b2b2b 50%, #000 100%); box-shadow: inset -1px 1px #000, 20px 35px 30px -30px rgba(0,0,0,0.8); position: relative; z-index: 2;}
+.mobile_screen img{ width: 100%; object-fit: cover; object-position: top center; border-radius: 10px;}
+
+.process_item{ display: flex; gap: 164px; padding: 30px 50px; position: relative; border-bottom: 1px solid rgba(15, 54, 86, 0.2); align-items: center;}
+.process_item .img{ width: 300px; height: 376px; pointer-events: none;}
+.process_item .img img{ width: 100%; height: 100%; object-fit: cover; object-position: center center;}
+@media (min-width:576px){
+    .process_item .img{ position: absolute; right: 0; top: 50%; transform: translateY(25%) rotate(0deg); transition: all 0.65s cubic-bezier(0.34, 1.56, 0.64, 1); opacity: 0;}
+    .process_item:hover .img{ opacity: 1; transform: translateY(-50%) rotate(10.83deg);}
+
+}
+.process_item .count{ font-size: 34px; font-weight: 500; color: var(--dark); transition: all .3s ease-in-out;}
+.process_item h3{ margin: 0 0 20px; font-weight: 500; color: var(--dark); transition: all .3s ease-in-out;}
+.process_item p{ margin: 0;}
+.process_item:hover .count,
+.process_item:hover h3{ color: var(--primary);}
+
+/*------------------*/
+#message{ padding: 0px 40px 0px 0px; }
 #mail-status {padding: 12px 20px;width: 100%;display:none; font-size: 1em; color: rgb(40, 40, 40);}
 .error{background-color: #F7902D;  margin-bottom: 40px;}
 .success{background-color: #48e0a4; }

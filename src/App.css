@@ -94,6 +94,9 @@ input,textarea,select {
     margin: 0 auto;
     padding: 0;
 }
+.container.xl{
+    max-width: 1600px;
+}
 .container.lg{
     max-width: 1200px;
 }
@@ -249,6 +252,9 @@ h6{
 /*---------------------------------------
             BUTTONS ( .btn ) 
 -----------------------------------------*/
+.btn-group{
+    flex-wrap: wrap;
+}
 .btns {
     margin: 0;
     padding: 0;

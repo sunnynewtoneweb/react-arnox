@@ -32,6 +32,13 @@
     .cont_info h3{ font-size: 24px;}
 
     #message { padding: 0;}
+
+    .lapmock_area .container{ max-width: 1080px;}
+    .laptop-mockup .screen{ max-width: 796px; height: 488px; top: 30px; margin-right: 4px;}
+
+    .desktop_screen{ height: 540px;}
+    .process_item{ gap: 120px;}
+    .process_item .img{ width: 250px; height: 306px;}
 }
 
 @media (max-width:1199px) {
@@ -64,6 +71,16 @@
     .service__item { margin-bottom: 30px;}
     .cta_area_box h4 small{ font-size: 14px;}
     .accordion-faq .accordion-button{ font-size: 22px;}
+
+    .lapmock_area .container{ max-width: 892px;}
+    .laptop-mockup .screen { max-width: 663px; height: 406px; top: 21px; margin-left: -1px;}
+
+    .proverview_box{ padding: 30px;}
+    .problem_area .inner{ padding-left: 5%; padding-right: 5%;}
+    .desktop_screen{ height: 450px;}
+    .mobile_screen{ max-width: 226px; height: 426px;}
+    .process_item{ gap: 80px; padding: 20px 300px 20px 0;}
+    .process_item .img{ width: 250px; height: 306px;}
 }
 
 @media (max-width: 991px) {
@@ -121,6 +138,20 @@
 
     .service_list_img{ height: 450px;}
     .service_list_img a::before { width: 140px; height: 140px; background-size: 22px auto;}
+
+    .lapmock_area .container{ max-width: 691px;}
+    .laptop-mockup .screen { max-width: 515px; height: 315px; top: 16px;}
+
+    .approach_block{ padding: 20px;}
+    .approach_block i{ margin-bottom: 30px;}
+    .approach_block h6{ font-size: 20px;}
+    .desktop_screen{ height: 400px; padding: 10px;}
+    .mobile_screen { max-width: 196px; height: 366px; padding: 5px;}
+    .process_item { gap: 50px; padding: 20px 190px 20px 0;}
+    .process_item .img { width: 200px; height: 256px;}
+    .pdass_block i { width: 50px; min-width: 50px; height: 50px;}
+    .pdass_block p{ line-height: normal;}
+    .process_item .count{ font-size: 26px;}
 }
 
 @media (max-width: 767px) {
@@ -153,6 +184,16 @@
     .service__item_icon svg{ height: auto;}
 
     .accordion-faq .accordion-button { font-size: 18px; padding: 20px 40px 20px 0;}
+
+    .lapmock_area .container{ max-width: 518px;}
+    .laptop-mockup .screen { max-width: 384px; height: 236px; top: 12px; margin: 0;}
+    .laptop-mockup .screen img{ border-radius: 3px;}
+    .approach_block{ padding: 35px;}
+    .approach_block i{ margin-bottom: 45px;}
+    .desktop_screen { height: 42vw; padding: 6px; margin-right: 10px;}
+    .desktop_screen img{ border-radius: 10px;}
+    .mobile_screen { max-width: 166px; height: 306px; margin: 0;}
+    .process_item { gap: 30px; padding: 20px 0 20px 0;}
 }
 
 @media (max-width:575px) {
@@ -180,4 +221,20 @@
     .cta_area_box .bg_curve { width: 100%; right: -15%; height: auto;}
 
     .service_list_img{ height: 350px;}
+
+    .lapmock_area .container{ max-width: 337px;}
+    .laptop-mockup .screen { max-width: 248px; height: auto; top: 8px; margin-left: -1px;}
+    .laptop-mockup .screen img{ border-radius: 2px;}
+
+    .desktop_screen { height: 50vw; padding: 6px; margin: 0 0 10px;}
+    .mobile_screen { max-width: 196px; height: 366px;}
+    
+    .process_item { gap: 0; padding: 20px; min-height: 400px; z-index: 2; align-items: unset; border: none; justify-content: flex-end; flex-direction: column; border-radius: 5px; overflow: hidden;}
+    .process_item:not(:last-child){ margin-bottom: 20px;}
+    .process_item .img { width: 100%; height: 100%; margin-top: 0; position: absolute; top: 0; left: 0; z-index: -1;}
+    .process_item .count{ margin-bottom: 20px; display: block;}
+    .process_item .img::before { content: ""; width: 100%; height: 70%; background: linear-gradient(to top, #000000a8 40%, #0000 100%); position: absolute; left: 0; bottom: 0;}
+    .process_item p,
+    .process_item .count,
+    .process_item h3{ color: #fff !important;}
 }

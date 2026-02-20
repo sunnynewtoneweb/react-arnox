@@ -45,13 +45,13 @@ export const servicesList = [
 ];
 export const contactButton = {
   text: "Get in Touch",
-  link: "contact",
+  link: "/contact",
   icon: "/images/touch_icn.svg",
   className: "btns d-none d-lg-inline-flex",
 };
 export const contactButton2 = {
   text: "Let's talk",
-  link: "contact",
+  link: "/contact",
   icon: "/images/touch_icn.svg",
   className: "btns d-flex d-lg-none mt-3 mb-2 mx-auto",
 };
