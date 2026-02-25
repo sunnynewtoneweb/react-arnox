@@ -15,7 +15,7 @@ function ProjectBanner({ subtitle, infoline, title, description, buttons }) {
           <div className="col-xl-9 mx-auto">
             <p className="mb-30">{description}</p>
             {infoline && (
-            <span class="lbl-tag mx-xl-5">{infoline}</span>
+            <span className="lbl-tag mx-xl-5">{infoline}</span>
             )}
             {buttons?.length > 0 && (
               <div className="btn-group justify-content-center mt-lg-4 gap-3 gap-md-4">

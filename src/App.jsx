@@ -8,9 +8,9 @@ import Services from './pages/Services'
 import ServiceDetail from "./pages/services/ServiceDetail";
 import Projects from './pages/Projects.jsx'
 import ProjectDetail from "./pages/projects/ProjectDetail";
+import Contact from './pages/Contact'
 import Error from "./pages/Error.jsx";
 
-import './App.css'
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
 

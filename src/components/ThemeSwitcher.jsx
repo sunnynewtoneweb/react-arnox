@@ -41,9 +41,9 @@ const ThemeSwitcher = () => {
           style={{ background: "none", border: "none", cursor: "pointer" }}
         >
           {theme === "color-1" ? (
-            <img src="/images/color_change_ic_2.png" alt="Sun" />
+            <img src="/images/color_change_ic_1.png" alt="Sun" />
           ) : (
-            <img src="/images/color_change_ic_1.png" alt="Moon" />
+            <img src="/images/color_change_ic_2.png" alt="Moon" />
           )}
         </button>
       </li>

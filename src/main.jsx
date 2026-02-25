@@ -6,19 +6,19 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'font-awesome/css/font-awesome.min.css';
 import '@splidejs/react-splide/css';
 import './animation.css'
+import './App.css'
+import 'react-phone-number-input/style.css'
 import '../src/components/header/Header.css'
 import '../src/components/footer/Footer.css'
-import App from './App.jsx'
 import './index.css'
 import './responsive.css'
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import App from './App.jsx'
 
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />    
-//   </StrictMode>,
-// )
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <GoogleReCaptchaProvider reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </GoogleReCaptchaProvider>
+);

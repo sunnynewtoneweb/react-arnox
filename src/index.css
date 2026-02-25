@@ -710,8 +710,11 @@ section {
 .form-group{ margin: 0 0 20px; padding-bottom: 10px;}
 .form-group label{ margin: 0 0 5px; display: block; color: rgba(0, 0, 0, 0.5); font-size: 14px; font-weight: 500; text-transform: capitalize;}
 .form-group .form-control{ width: 100%; height: 48px; padding: 0 0 17px; color: var(--black); font-size: 18px; font-weight: 600; border: none; border-bottom: 1px solid #CCC; box-shadow: none; border-radius: 0; background: none;}
+.PhoneInputInput{ padding: 0; color: var(--black); font-size: 18px; font-weight: 600; border: none; background: none;}
 .form-group textarea.form-control{ height: 80px;}
-.form-group .form-control:focus{ border-color: var(--primary);}
+.form-group .form-control:focus, .PhoneInputInput:focus{ border-color: var(--primary);}
+.PhoneInputCountryIcon--border{ border: none; box-shadow: none;}
+.PhoneInputCountrySelectArrow{ margin-left: 10px; border-color: var(--dark); opacity: 1;}
 
 .cont_info{ padding: 50px 35px 20px; border-radius: 12px; background: var(--dark); display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; position: relative; z-index: 2; min-height: 100%;}
 .cont_info::before{ content: ""; width: 435px; height: 435px; border-radius: 50%; background: linear-gradient(180deg, #13324E 0%, rgba(19, 50, 78, 0.00) 100%); position: absolute; right: -133px; bottom: -69px; z-index: -1;}
